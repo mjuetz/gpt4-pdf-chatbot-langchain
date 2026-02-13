@@ -31,22 +31,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@edge-runtime/primitives@npm:4.0.5":
-  version: 4.0.5
-  resolution: "@edge-runtime/primitives@npm:4.0.5"
-  checksum: c4b8f724526d4b3b3ddfccccbf725ca2163d4dfca311e7ea1d7e7b2d6a3cbb58b0bc4dcd69065ec8a1b13c5bb1cc2e28a3a5643185e036c4734a19d0ed7e96ae
-  languageName: node
-  linkType: hard
-
-"@edge-runtime/types@npm:^2.2.3":
-  version: 2.2.7
-  resolution: "@edge-runtime/types@npm:2.2.7"
-  dependencies:
-    "@edge-runtime/primitives": 4.0.5
-  checksum: 20d8860c67660addd517745125a3470cd12e2e8c700f528dc05fd98a3fa76a0ccad4bd42bd6e41d14a3bd98709ed6afd51e92a970de21cff4cb0b9337c24338c
-  languageName: node
-  linkType: hard
-
 "@esbuild-kit/cjs-loader@npm:^2.4.2":
   version: 2.4.2
   resolution: "@esbuild-kit/cjs-loader@npm:2.4.2"
@@ -493,18 +477,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinecone-database/pinecone@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@pinecone-database/pinecone@npm:1.1.0"
+"@pinecone-database/pinecone@npm:3.0.1":
+  version: 3.0.1
+  resolution: "@pinecone-database/pinecone@npm:3.0.1"
   dependencies:
-    "@edge-runtime/types": ^2.2.3
-    "@sinclair/typebox": ^0.29.0
-    "@types/node": ^18.11.17
-    ajv: ^8.12.0
     cross-fetch: ^3.1.5
     encoding: ^0.1.13
-    typescript: ^4.9.4
-  checksum: 5ff066c23006c6ad8eb3ae5add5aa2633adacf48c539a498f6d97798fb9640254a2ede99f7e47aaff3d885e3df5168ed193990d846acd9bebded7140f18c8eb1
+  checksum: ca7ca9cb7ac1b555f0b207dc839a68bf1db8b15fd408c1d53fc9a267b8238911303a2f9af9da48530706543ca5699e5e59924a0d7bb8091a8c402e612678daf7
   languageName: node
   linkType: hard
 
@@ -720,13 +699,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinclair/typebox@npm:^0.29.0":
-  version: 0.29.6
-  resolution: "@sinclair/typebox@npm:0.29.6"
-  checksum: 02c2ee9e8bcb4e03a2497fc208a5a2ae4f4991347e6f2b2a217027b33eb8ca2bc74e80bfb2654da537453e9e5c25d59dbad2d32d4fe47ffec357330bf343bf7a
-  languageName: node
-  linkType: hard
-
 "@swc/helpers@npm:0.4.14":
   version: 0.4.14
   resolution: "@swc/helpers@npm:0.4.14"
@@ -798,15 +770,6 @@ __metadata:
   version: 20.4.9
   resolution: "@types/node@npm:20.4.9"
   checksum: 504e3da96274f3865c1251830f4750bb0a8f6ef6f8648902cd3bba33370c5f219235471bfbf55cce726b25c8eacfcc8e2aad0ec3b13e27ea6708b00d4a9a46c8
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^18.11.17":
-  version: 18.18.9
-  resolution: "@types/node@npm:18.18.9"
-  dependencies:
-    undici-types: ~5.26.4
-  checksum: 629ce20357586144031cb43d601617eef45e59460dea6b1e123f708e6885664f44d54f65e5b72b2614af5b8613f3652ced832649c0b991accbc6a85139befa51
   languageName: node
   linkType: hard
 
@@ -1014,18 +977,6 @@ __metadata:
     json-schema-traverse: ^0.4.1
     uri-js: ^4.2.2
   checksum: 874972efe5c4202ab0a68379481fbd3d1b5d0a7bd6d3cc21d40d3536ebff3352a2a1fabb632d4fd2cc7fe4cbdcd5ed6782084c9bbf7f32a1536d18f9da5007d4
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^8.12.0":
-  version: 8.12.0
-  resolution: "ajv@npm:8.12.0"
-  dependencies:
-    fast-deep-equal: ^3.1.1
-    json-schema-traverse: ^1.0.0
-    require-from-string: ^2.0.2
-    uri-js: ^4.2.2
-  checksum: 4dc13714e316e67537c8b31bc063f99a1d9d9a497eb4bbd55191ac0dcd5e4985bbb71570352ad6f1e76684fb6d790928f96ba3b2d4fd6e10024be9612fe3f001
   languageName: node
   linkType: hard
 
@@ -2506,7 +2457,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -2731,7 +2682,7 @@ __metadata:
   resolution: "gpt4-langchain-pdf-chatbot@workspace:."
   dependencies:
     "@microsoft/fetch-event-source": ^2.0.1
-    "@pinecone-database/pinecone": 1.1.0
+    "@pinecone-database/pinecone": 3.0.1
     "@radix-ui/react-accordion": ^1.1.1
     "@types/node": ^18.14.6
     "@types/react": ^18.0.28
@@ -3304,13 +3255,6 @@ __metadata:
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
   checksum: 7486074d3ba247769fda17d5181b345c9fb7d12e0da98b22d1d71a5db9698d8b4bd900a3ec1a4ffdd60846fc2556274a5c894d0c48795f14cb03aeae7b55260b
-  languageName: node
-  linkType: hard
-
-"json-schema-traverse@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "json-schema-traverse@npm:1.0.0"
-  checksum: 02f2f466cdb0362558b2f1fd5e15cce82ef55d60cd7f8fa828cf35ba74330f8d767fcae5c5c2adb7851fa811766c694b9405810879bc4e1ddd78a7c0e03658ad
   languageName: node
   linkType: hard
 
@@ -5166,13 +5110,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"require-from-string@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "require-from-string@npm:2.0.2"
-  checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
-  languageName: node
-  linkType: hard
-
 "resolve-from@npm:^4.0.0":
   version: 4.0.0
   resolution: "resolve-from@npm:4.0.0"
@@ -5208,7 +5145,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.2
-  resolution: "resolve@patch:resolve@npm%3A1.22.2#~builtin<compat/resolve>::version=1.22.2&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.2#~builtin<compat/resolve>::version=1.22.2&hash=07638b"
   dependencies:
     is-core-module: ^2.11.0
     path-parse: ^1.0.7
@@ -5221,7 +5158,7 @@ __metadata:
 
 "resolve@patch:resolve@^2.0.0-next.4#~builtin<compat/resolve>":
   version: 2.0.0-next.4
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#~builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#~builtin<compat/resolve>::version=2.0.0-next.4&hash=07638b"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -5885,7 +5822,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.4, typescript@npm:^4.9.5":
+"typescript@npm:^4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -5895,13 +5832,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1f8f3b6aaea19f0f67cba79057674ba580438a7db55057eb89cc06950483c5d632115c14077f6663ea76fd09fce3c190e6414bb98582ec80aa5a4eaf345d5b68
+  checksum: 2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
@@ -5914,13 +5851,6 @@ __metadata:
     has-symbols: ^1.0.3
     which-boxed-primitive: ^1.0.2
   checksum: b7a1cf5862b5e4b5deb091672ffa579aa274f648410009c81cca63fed3b62b610c4f3b773f912ce545bb4e31edc3138975b5bc777fc6e4817dca51affb6380e9
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~5.26.4":
-  version: 5.26.5
-  resolution: "undici-types@npm:5.26.5"
-  checksum: 3192ef6f3fd5df652f2dc1cd782b49d6ff14dc98e5dced492aa8a8c65425227da5da6aafe22523c67f035a272c599bb89cfe803c1db6311e44bed3042fc25487
   languageName: node
   linkType: hard
 
